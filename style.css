@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #f5f5f5;
+    font-family: 'Catamaran';
+}
+
+.hero{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-title{
+    font-size: 4rem;
+    color: #454545;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 324px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+.order-btn{
+    padding: 12px 32px;
+    background: #394b2a;
+    color: #fff;
+    border: 1px solid black;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    text-align: center;
+    margin-top: 72px;
+    margin-bottom: 64px;
+}
+
+.hero-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    p{
+        color: #4b4f58;
+    }
+}
+
+.explore-btn{
+    padding: 12px 32px;
+    background: none;
+    border: 1px solid #394b2a;
+    color: #555;
+    cursor: pointer;
+    transition: .2s linear;
+
+    &:hover{
+        background: #394b2a;
+        color: #fff;
+    }
+}
+
+.hero-img{
+    background: url("https://images.unsplash.com/photo-1585827552668-d0728b355e3d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.what{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+    padding: 80px 324px;
+}
+
+.what-title, .vision-left-title, .wellness-title, .wellness-box-title, .get-title, .follow-title{
+    font-size: 2.8rem;
+}
+
+.what-cards{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 200px;
+    text-align: center;
+}
+
+.what-card{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    p{
+        line-height: 24px;
+        color: #4b4f58;
+    }
+}
+
+.vision{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 324px;
+    background: #edf7da;
+}
+
+.vision-content{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.vision-left{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: start;
+    justify-content: center;
+}
+
+.vision-btn{
+    padding: 12px 32px;
+    background: none;
+    border: 1px solid #394b2a;
+    color: #555;
+    cursor: pointer;
+    transition: .2s linear;
+
+    &:hover{
+        background: #394b2a;
+        color: #fff;
+    }
+}
+
+.vision-right{
+    background: url("https://images.unsplash.com/photo-1595475207225-428b62bda831?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    height: 600px;
+    width: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+.wellness{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 72px;
+    padding: 80px 324px;
+}
+
+.wellness-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 600px);
+    gap: 80px;
+
+    p{
+        color: #4b4f58;
+    }
+}
+
+.box1{
+    background: url("https://images.unsplash.com/photo-1456526921702-fa7873ea028f?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+
+.box2, .box3, .box6{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 32px;
+}
+
+.box4{
+    background: url("https://images.unsplash.com/photo-1597589022928-bb4002c099ec?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+
+.box5{
+    background: url("https://images.unsplash.com/photo-1619020986176-50be596d0c02?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");    
+    background-size: cover;
+    background-position: center;
+}
+
+.wellness-btn{
+    padding: 12px 32px;
+    background: none;
+    border: 1px solid #394b2a;
+    color: #555;
+    cursor: pointer;
+    transition: .2s linear;
+
+    &:hover{
+        background: #394b2a;
+        color: #fff;
+    }
+}
+
+.get{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+    padding: 80px 324px;
+    background: #edf7da;
+}
+
+.get-cards{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 200px;
+    text-align: center;
+}
+
+.get-card{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    p{
+        line-height: 24px;
+        color: #4b4f58;
+    }
+}
+
+.follow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 52px;
+    padding: 80px;
+}
+
+.follow-btn{
+    padding: 12px 32px;
+    background: none;
+    border: 1px solid #394b2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: #555;
+    cursor: pointer;
+    transition: .2s linear;
+
+    &:hover{
+        background: #394b2a;
+        color: #fff;
+    }
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 324px;
+    background: #394b2a;
+    color: #fff;
+}
+
+.footer-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-links{
+    display: flex;
+    gap: 12px;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: #fff;
+}
